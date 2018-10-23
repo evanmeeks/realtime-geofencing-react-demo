@@ -42,8 +42,8 @@ const initializePeople = ({ lat, lng }) => {
 app.prepare()
   .then(() => {
     const server = express();
-    const referencePosition = { lat: 6.4311415, lng: 3.4625833 };
-
+    const referencePosition = { lat: 32.7273338, lng: -89.5470383 };
+    // 32.72733387839031 long-89.54703833763296
     let people = initializePeople(referencePosition);
 
     server.use(cors());

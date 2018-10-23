@@ -20,8 +20,11 @@ class UserMarker extends Component {
   }
 
   render() {
+    console.log('this.state', this.state)
     const { radius } = this.props;
     const { position } = this.state;
+
+    console.log('user marker', this.state)
     const regionOptions = { fillOpacity: 0.1, strokeWidth: 1, strokeOpacity: 0.2 };
 
     const MARKER_SIZE = new google.maps.Size(50, 70);

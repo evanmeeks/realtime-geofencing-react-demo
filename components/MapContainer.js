@@ -61,6 +61,7 @@ class MapContainer extends Component {
 
   render() {
     const { person: { id, position }, radius, people, channel } = this.props;
+    console.log('mapcontainer.props', this.props)
 
     return (
       <GoogleMap ref={elem => this.map = elem} zoom={15} center={position}>
